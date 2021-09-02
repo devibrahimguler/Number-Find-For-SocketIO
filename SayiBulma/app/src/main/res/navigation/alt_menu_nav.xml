@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alt_menu_nav"
+    app:startDestination="@id/gorunum">
+
+    <fragment
+        android:id="@+id/gorunum"
+        android:name="com.muntazif.sayibulma.view.fr.GorunumFragment"
+        android:label="fragment_gorunum"
+        tools:layout="@layout/fragment_gorunum" >
+        <action
+            android:id="@+id/action_gorunum_to_hakkimizdaFragment"
+            app:destination="@id/hakkimizdaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunAra"
+        android:name="com.muntazif.sayibulma.view.fr.OyunAraFragment"
+        android:label="fragment_oyun_ara"
+        tools:layout="@layout/fragment_oyun_ara" />
+    <fragment
+        android:id="@+id/siralama"
+        android:name="com.muntazif.sayibulma.view.fr.SiralamaFragment"
+        android:label="fragment_siralama"
+        tools:layout="@layout/fragment_siralama" />
+    <fragment
+        android:id="@+id/hakkimizdaFragment"
+        android:name="com.muntazif.sayibulma.view.fr.HakkimizdaFragment"
+        android:label="fragment_hakkimizda"
+        tools:layout="@layout/fragment_hakkimizda" >
+        <action
+            android:id="@+id/action_hakkimizdaFragment_to_gorunum"
+            app:destination="@id/gorunum" />
+    </fragment>
+</navigation>

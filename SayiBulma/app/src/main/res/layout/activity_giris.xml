@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.giris.GirisActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/logoGirisAc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/sayi_bulma_logo"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:id="@+id/isimGirisAc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoGirisAc"
+            android:hint="İsim Giriniz..."
+            android:drawableRight="@drawable/name"
+            android:fontFamily="@font/alike_angular"
+            android:textSize="20sp"
+            android:layout_marginTop="80dp"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:id="@+id/sifreGirisAc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/isimGirisAc"
+            android:hint="Şifre Giriniz..."
+            android:drawableRight="@drawable/password"
+            android:fontFamily="@font/alike_angular"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/girisYapGirisAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Giriş Yap"
+            android:fontFamily="@font/alike_angular"
+            android:layout_marginTop="60dp"
+            android:textAllCaps="false"
+            android:layout_below="@+id/sifreGirisAc"/>
+    </RelativeLayout>
+</RelativeLayout>
